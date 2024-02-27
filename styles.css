@@ -41,10 +41,10 @@ nav{
 #binstatus{
     
     width: 100%;
-    height: 600px;
+    height: 700px;
     display: flex;
     margin-top: 2em;
-    justify-content: center;
+    
 
 
 }
@@ -54,6 +54,7 @@ h1{
     font-size: 3em;
     font-weight: 500;
     color: rgb(83, 83, 83);
+    margin-left: 1.6em;
 }
 
 a:link {
@@ -85,4 +86,61 @@ footer{
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.dustbins{
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15em;
+    
+}
+
+/*dustbin codepen*/
+.dustbin-icon {
+    position: relative;
+    top: 12em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 12em;
+    height: 14em;
+    background: linear-gradient(90deg, #333 40%, transparent 40%);
+    background-size: 2.8em;
+    border-bottom: 1.6em solid #333;
+    border-radius: 0 0 1em 1em;
+    
+    
+}
+.dustbin-icon:before {
+    content: '';
+    position: absolute;
+    top: -3em;
+    left: -1.5em;
+    width: 14em;
+    height: 2.2em;
+    border: 0.6em solid #333;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border-radius: 1em 1em 0 0;
+    
+}
+.dustbin-icon:after {
+    content: '';
+    position: absolute;
+    top: -5.1em;
+    left: 3em;
+    width: 5em;
+    height: 1.5em;
+    border-radius: 1em 1em 0 0;
+    border-width: 0.6em;
+    border-color: #333;
+    border-style: solid;
+    
 }
